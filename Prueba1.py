@@ -1,10 +1,10 @@
-n1 = float(input("Introduce tu primer número: ") )
+n1 = float(input("Introduce tu primer número: ") )  #Para poder almacenar los numeros
 n2 = float(input("Introduce tu segundo número: ") )
 
 opcion = 0
-while True:
+while True:   #Menu
     print("""
-    Dime, ¿qué quieres hacer?
+    Dime, ¿qué quieres hacer? 
     
     1) Sumar los dos números
     2) Restar los dos números
@@ -14,7 +14,7 @@ while True:
     """)
     opcion = int(input("Elige una opción: ") )     
 
-    if opcion == 1:
+    if opcion == 1:  #If de las opciones del menu con la suma dentro de cada enunciado
         print(" ")
         print("RESULTADO: La suma de",n1,"+",n2,"es igual a",n1+n2)
     elif opcion == 2:
@@ -29,4 +29,4 @@ while True:
     elif opcion == 5:
         break
     else:
-        print("Opción incorrecta")
+        print("Opción incorrecta") #En caso de elegir una opcion que no este en el menu.
